@@ -55,18 +55,37 @@ a {
 /* MY WORK STYLE*/
 
 .myWork {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.HappyHippie {
+    grid-area: TopLeft;
+}
+
+.Government {
+    grid-area: TopRight;
+}
+
+.PupPal {
+    grid-area: BottomLeft;
+}
+
+.HappyGrocer {
+    grid-area: BottomRight;
 }
 
 .caseStudies {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "TopLeft TopRight"
+    "BottomLeft BottomRight";
 }
 
-.card{
+#card{
     display: flex;
     flex-direction: column;
     align-items: center;
